@@ -1,6 +1,4 @@
-# Brain4j Documentation Site
-
-<img width="25%" align="right" src="./src/assets/brain4j-logo.png" alt="Brain4j Logo" />
+# Brain4j Documentation Site <img width="4%" align="left" src="./src/assets/brain4j-logo.png" alt="Brain4j Logo" />
 
 A modern documentation site for [Brain4j](https://github.com/brain4j-org/brain4j). This site is built with [Astro](https://astro.build/), [Starlight](https://starlight.astro.build/), [TailwindCSS](https://tailwindcss.com/), and [Preline](https://preline.co/).
 

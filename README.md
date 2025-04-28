@@ -2,16 +2,7 @@
 
 ![Brain4j Logo](./src/assets/brain4j-logo.svg)
 
-A modern documentation site for [Brain4j](https://github.com/brain4j-org/brain4j), a powerful Java library for neural networks and machine learning. This site is built with [Astro](https://astro.build/), [Starlight](https://starlight.astro.build/), [TailwindCSS](https://tailwindcss.com/), and [Preline](https://preline.co/).
-
-## Features
-
-- 📝 **Comprehensive Documentation** - Detailed guides, API reference, and practical examples
-- 🎨 **Beautiful Design** - Modern Apple-inspired interface with sleek animations
-- 📱 **Fully Responsive** - Works flawlessly on mobile, tablet, and desktop
-- 🔍 **Full-Text Search** - Powered by Starlight's built-in search capabilities
-- 🚀 **High Performance** - Built with Astro for optimal loading speed
-- 🌙 **Dark/Light Mode** - Automatic theme switching based on user preference
+A modern documentation site for [Brain4j](https://github.com/brain4j-org/brain4j). This site is built with [Astro](https://astro.build/), [Starlight](https://starlight.astro.build/), [TailwindCSS](https://tailwindcss.com/), and [Preline](https://preline.co/).
 
 ## Quick Start
 

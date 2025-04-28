@@ -1,6 +1,6 @@
 # Brain4j Documentation Site
 
-![Brain4j Logo](./src/assets/brain4j-logo.svg)
+![Brain4j Logo](./src/assets/brain4j-logo.png)
 
 A modern documentation site for [Brain4j](https://github.com/brain4j-org/brain4j). This site is built with [Astro](https://astro.build/), [Starlight](https://starlight.astro.build/), [TailwindCSS](https://tailwindcss.com/), and [Preline](https://preline.co/).
 

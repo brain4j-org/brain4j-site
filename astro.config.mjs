@@ -11,7 +11,7 @@ export default defineConfig({
       starlight({
           title: 'Brain4j',
           logo: {
-            src: './src/assets/brain4j-logo.svg',
+            src: './src/assets/brain4j-logo.png',
             alt: 'Brain4j Logo',
           },
           social: [

@@ -38,7 +38,7 @@ A modern documentation site for [Brain4j](https://github.com/brain4j-org/brain4j
    npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:4321/brain4j/` to see the site.
+4. Open your browser and navigate to `http://localhost:4321/` to see the site.
 
 ## Documentation Structure
 

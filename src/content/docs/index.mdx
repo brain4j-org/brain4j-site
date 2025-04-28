@@ -1,0 +1,46 @@
+---
+title: Brain4j Documentation
+description: A modern Java framework for neural networks and machine learning
+template: splash
+hero:
+  tagline: A powerful, intuitive Java framework for building, training, and deploying neural networks
+  image:
+    file: ../../assets/brain4j-logo.svg
+  actions:
+    - text: Get Started
+      link: /brain4j/guides/introduction/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/brain4j-org/brain4j
+      icon: github
+      variant: secondary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Why Brain4j?
+
+<CardGrid stagger>
+  <Card title="Simple API" icon="pencil">
+    Intuitive interface designed for Java developers, with minimal boilerplate
+  </Card>
+  <Card title="High Performance" icon="rocket">
+    Optimized for both training and inference on modern hardware
+  </Card>
+  <Card title="Flexible" icon="puzzle">
+    Build any architecture from simple feed-forward networks to complex deep learning models
+  </Card>
+  <Card title="Production Ready" icon="check">
+    Designed for deployment in real-world applications with robust error handling
+  </Card>
+</CardGrid>
+
+## Features
+
+- **Flexible Architecture**: Design networks with any number of layers and neurons
+- **Built-in Optimizers**: SGD, Adam, RMSProp, and more for efficient training
+- **Activation Functions**: ReLU, Sigmoid, Tanh, Softmax, and others
+- **Serialization**: Save and load trained models
+- **Regularization**: Dropout, L1/L2 regularization to prevent overfitting
+- **GPU Acceleration**: Optional CUDA support for faster training

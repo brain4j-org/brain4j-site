@@ -1,0 +1,40 @@
+:root {
+  --sl-font: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', sans-serif;
+  
+  --sl-color-accent-low: #E3F8FF;
+  --sl-color-accent: #2BB0ED;
+  --sl-color-accent-high: #035388;
+  
+  --sl-border-radius: 8px;
+  --sl-border-radius-medium: 6px;
+  --sl-border-radius-small: 4px;
+  
+  --sl-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --sl-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --sl-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+a, button {
+  transition: all 0.2s ease;
+}
+
+.card {
+  border-radius: var(--sl-border-radius);
+  box-shadow: var(--sl-shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sl-shadow-md);
+}
+
+.astro-code {
+  border-radius: var(--sl-border-radius-small);
+  font-family: 'SF Mono', Menlo, Monaco, 'Courier New', monospace;
+}
+
+.sl-button {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}

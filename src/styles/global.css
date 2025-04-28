@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--sl-color-accent);
+  transition: box-shadow 0.2s ease;
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+p + p {
+  margin-top: 1.25em;
+}

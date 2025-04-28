@@ -1,13 +1,16 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import tailwindcss from '@tailwindcss/vite';
+import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://brain4j-org.github.io',
-  base: '/',
+  base: '/brain4j-site',
   integrations: [
+      tailwind({
+        applyBaseStyles: false,
+      }),
       starlight({
           title: 'Brain4j',
           logo: {
@@ -19,6 +22,7 @@ export default defineConfig({
           ],
           customCss: [
             './src/styles/custom.css',
+            './src/styles/global.css',
           ],
           sidebar: [
               {
@@ -53,8 +57,4 @@ export default defineConfig({
           ],
       }),
   ],
-
-  vite: {
-    plugins: [tailwindcss()],
-  },
 });

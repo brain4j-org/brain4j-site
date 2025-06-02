@@ -123,9 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     smoothScroll();
     initScrollAnimations();
     initNavbarScroll();
-    initFloatingShapesAndParallax();
     initMobileMenu();
-    handleSystemDarkModeChange();
 
     window.addEventListener('load', () => {
         document.body.style.opacity = '0';

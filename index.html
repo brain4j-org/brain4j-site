@@ -4,34 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A sophisticated machine learning framework for Java. Open-source, designed with speed, simplicity, and lightweight in mind.">
-
     <title>Brain4J - Machine learning for Java</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="src/css/custom.css" rel="stylesheet">
-    <link rel="canonical" href="https://brain4j.org/">
 </head>
 <body class="font-sans text-slate-100 overflow-x-hidden">
-    <div class="floating-shapes fixed inset-0 z-0">
-        <div class="shape w-32 h-32 bg-brain-blue rounded-full"></div>
-        <div class="shape w-24 h-24 bg-brain-accent rounded-full"></div>
-        <div class="shape w-20 h-20 bg-purple-400 rounded-full"></div>
-    </div>
+    <div id="particles-js"></div>
 
     <nav class="fixed top-0 w-full nav-blur z-50">
         <div class="content-width py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 bg-brain-blue rounded-lg flex items-center justify-center shadow-lg animate-pulse-slow">
+                    <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center shadow-lg">
                         <span class="text-white font-bold text-sm">B4J</span>
                     </div>
                     <span class="text-xl font-semibold text-white">Brain4J</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-slate-300 hover:text-brain-blue transition-all duration-300 hover:scale-105">Home</a>
-                    <a href="#capabilities" class="text-slate-300 hover:text-brain-blue transition-all duration-300 hover:scale-105">Capabilities</a>
-                    <a href="#benchmarks" class="text-slate-300 hover:text-brain-blue transition-all duration-300 hover:scale-105">Benchmarks</a>
-                    <a href="#team" class="text-slate-300 hover:text-brain-blue transition-all duration-300 hover:scale-105">Team</a>
+                    <a href="#home" class="text-slate-300 hover:text-blue-400 transition-all duration-300 hover:scale-105">Home</a>
+                    <a href="#capabilities" class="text-slate-300 hover:text-blue-400 transition-all duration-300 hover:scale-105">Capabilities</a>
+                    <a href="#benchmarks" class="text-slate-300 hover:text-blue-400 transition-all duration-300 hover:scale-105">Benchmarks</a>
+                    <a href="#team" class="text-slate-300 hover:text-blue-400 transition-all duration-300 hover:scale-105">Team</a>
                     <a href="https://github.com/brain4j-org/brain4j" target="_blank" class="btn-primary text-white px-6 py-2 rounded-full font-medium">
                         Try Brain4J
                     </a>
@@ -40,17 +35,16 @@
         </div>
     </nav>
 
-    <section id="home" class="min-h-screen flex items-center relative">
-        <div class="hero-gradient absolute inset-0"></div>
-        <div class="max-w-6xl mx-auto px-6 py-20 relative z-10 text-center">
-            <div class="max-w-4xl content-fade">
-                <h1 class="text-5xl md:text-7xl font-bold text-gray-900 dark:text-gray-100 mb-6 leading-tight">
+    <section id="home" class="min-h-screen flex items-center relative z-10">
+        <div class="content-width py-20 text-center">
+            <div class="max-w-4xl mx-auto content-fade">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                     Brain4J
                 </h1>
-                <h2 class="text-2xl md:text-3xl font-light text-gray-700 dark:text-gray-300 mb-8">
+                <h2 class="text-2xl md:text-3xl font-light text-gray-300 mb-8">
                     A sophisticated machine learning framework for Java
                 </h2>
-                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl leading-relaxed">
+                <p class="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
                     Open-source, designed with speed, simplicity, and lightweight in mind.
                 </p>
                 
@@ -58,13 +52,13 @@
                     <a href="https://github.com/brain4j-org/brain4j/wiki/Getting-Started" target="_blank" class="btn-primary text-white px-8 py-4 rounded-full text-lg font-medium">
                         Get Started
                     </a>
-                    <a href="https://github.com/brain4j-org/brain4j/wiki/Installation" target="_blank" class="border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-8 py-4 rounded-full text-lg font-medium hover:border-brain-blue hover:text-brain-blue transition-all duration-300 hover:scale-105">
+                    <a href="https://github.com/brain4j-org/brain4j/wiki/Installation" target="_blank" class="btn-secondary text-white px-8 py-4 rounded-full text-lg font-medium">
                         View Documentation
                     </a>
                 </div>
 
                 <div class="flex justify-center mt-6">
-                    <div class="scroll-indicator animate-bounce">
+                    <div class="animate-bounce">
                         <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
@@ -74,7 +68,7 @@
         </div>
     </section>
 
-    <section class="section-spacing relative">
+    <section class="section-spacing relative z-10">
         <div class="content-width">
             <div class="section-reveal text-center">
                 <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">
@@ -94,7 +88,7 @@
         </div>
     </section>
 
-    <section id="capabilities" class="section-spacing relative">
+    <section id="capabilities" class="section-spacing relative z-10">
         <div class="content-width">
             <div class="section-reveal mb-16 text-center">
                 <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
@@ -102,9 +96,9 @@
                 </h2>
             </div>
 
-            <div class="section-spacing grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 <div class="glass-card section-reveal rounded-2xl p-8">
-                    <div class="w-12 h-12 bg-brain-blue rounded-lg flex items-center justify-center mb-6 card-icon animate-glow">
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-6 card-icon">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
@@ -117,7 +111,7 @@
                 </div>
 
                 <div class="glass-card section-reveal rounded-2xl p-8">
-                    <div class="w-12 h-12 bg-brain-accent rounded-lg flex items-center justify-center mb-6 card-icon animate-glow">
+                    <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center mb-6 card-icon">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 7.172V5L8 4z"></path>
                         </svg>
@@ -130,7 +124,7 @@
                 </div>
 
                 <div class="glass-card section-reveal rounded-2xl p-8">
-                    <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-6 card-icon animate-glow">
+                    <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-6 card-icon">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                         </svg>
@@ -144,7 +138,7 @@
         </div>
     </section>
 
-    <section id="benchmarks" class="section-spacing relative">
+    <section id="benchmarks" class="section-spacing relative z-10">
         <div class="content-width">
             <div class="section-reveal mb-16 text-center">
                 <h2 class="text-3xl md:text-5xl font-bold text-white mb-8">
@@ -155,13 +149,13 @@
                 </p>
             </div>
 
-            <div class="rounded-2xl p-8 section-reveal">
+            <div class="glass-card rounded-2xl p-8 section-reveal">
                 <div class="overflow-x-auto">
                     <table class="w-full">
                         <thead>
                             <tr class="border-b border-slate-600">
                                 <th class="text-left py-2 font-semibold text-white">Benchmark</th>
-                                <th class="text-center py-4 font-semibold text-brain-blue">Brain4J</th>
+                                <th class="text-center py-4 font-semibold text-blue-400">Brain4J</th>
                                 <th class="text-center py-4 font-semibold text-slate-400">Tensorflow</th>
                                 <th class="text-center py-4 font-semibold text-slate-400">Pytorch</th>
                                 <th class="text-center py-4 font-semibold text-slate-400">DeepLearning4J</th>
@@ -170,21 +164,21 @@
                         <tbody class="divide-y divide-slate-700">
                             <tr class="transition-colors">
                                 <td class="py-4 font-medium text-white">Seconds per epoch</td>
-                                <td class="text-center py-4 text-brain-blue font-semibold">~0.92</td>
+                                <td class="text-center py-4 text-blue-400 font-semibold">~0.92</td>
                                 <td class="text-center py-4 text-slate-400">~0.62</td>
                                 <td class="text-center py-4 text-slate-400">~1.11</td>
                                 <td class="text-center py-4 text-slate-400">~2.92</td>
                             </tr>
                             <tr class="transition-colors">
                                 <td class="py-4 font-medium text-white">Accuracy</td>
-                                <td class="text-center py-4 text-brain-blue font-semibold">97.52%</td>
+                                <td class="text-center py-4 text-blue-400 font-semibold">97.52%</td>
                                 <td class="text-center py-4 text-slate-400">97.44%</td>
                                 <td class="text-center py-4 text-slate-400">96.83%</td>
                                 <td class="text-center py-4 text-slate-400">97.37%</td>
                             </tr>
                             <tr class="transition-colors">
                                 <td class="py-4 font-medium text-white">Startup Time</td>
-                                <td class="text-center py-4 text-brain-blue font-semibold">—</td>
+                                <td class="text-center py-4 text-blue-400 font-semibold">—</td>
                                 <td class="text-center py-4 text-slate-400">—</td>
                                 <td class="text-center py-4 text-slate-400">—</td>
                                 <td class="text-center py-4 text-slate-400">—</td>
@@ -196,7 +190,7 @@
         </div>
     </section>
 
-    <section id="team" class="section-spacing section-transition relative">
+    <section id="team" class="section-spacing relative z-10">
         <div class="content-width">
             <div class="section-reveal mb-16 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
@@ -210,22 +204,22 @@
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="text-center section-reveal">
                     <div class="profile-glow mb-6 inline-block">
-                        <div class="w-32 h-32 bg-gradient-to-br from-brain-blue to-blue-600 rounded-full flex items-center justify-center animate-float">
+                        <div class="w-32 h-32 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center animate-float">
                             <span class="text-white text-3xl font-bold">XE</span>
                         </div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">xEcho1337</h3>
-                    <p class="text-brain-blue font-medium mb-4">Lead Developer</p>
+                    <p class="text-blue-400 font-medium mb-4">Lead Developer</p>
                 </div>
 
                 <div class="text-center section-reveal">
                     <div class="profile-glow mb-6 inline-block">
-                        <div class="w-32 h-32 bg-gradient-to-br from-brain-accent to-green-600 rounded-full flex items-center justify-center animate-float" style="animation-delay: 2s;">
+                        <div class="w-32 h-32 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center animate-float" style="animation-delay: 2s;">
                             <span class="text-white text-3xl font-bold">AD</span>
                         </div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">Adversing</h3>
-                    <p class="text-brain-blue font-medium mb-4">Contributor</p>
+                    <p class="text-blue-400 font-medium mb-4">Contributor</p>
                 </div>
 
                 <div class="text-center section-reveal">
@@ -235,54 +229,57 @@
                         </div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">skrahs</h3>
-                    <p class="text-brain-blue font-medium mb-4">Web Developer</p>
+                    <p class="text-blue-400 font-medium mb-4">Web Developer</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-spacing section-transition relative">
-        <div class="max-w-4xl mx-auto text-center px-6 section-reveal">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
-                Try Brain4J
-            </h2>
-            <p class="text-lg text-slate-300 mb-12 max-w-2xl mx-auto">
-                Brain4J is currently available as an open-source framework to help developers build faster, 
-                lighter ML applications. Join our community and start building today.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://github.com/brain4j-org/brain4j/wiki/Getting-Started" target="_blank" class="btn-primary text-white px-8 py-4 rounded-full text-lg font-medium">
-                    Get Started Now
-                </a>
-                <a href="https://github.com/brain4j-org/brain4j" target="_blank" class="btn-secondary text-white px-8 py-4 rounded-full text-lg font-medium">
-                    Star on GitHub
-                </a>
+    <section class="section-spacing relative z-10">
+        <div class="content-width text-center">
+            <div class="section-reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
+                    Try Brain4J
+                </h2>
+                <p class="text-lg text-slate-300 mb-12 max-w-2xl mx-auto">
+                    Brain4J is currently available as an open-source framework to help developers build faster, 
+                    lighter ML applications. Join our community and start building today.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://github.com/brain4j-org/brain4j/wiki/Getting-Started" target="_blank" class="btn-primary text-white px-8 py-4 rounded-full text-lg font-medium">
+                        Get Started Now
+                    </a>
+                    <a href="https://github.com/brain4j-org/brain4j" target="_blank" class="btn-secondary text-white px-8 py-4 rounded-full text-lg font-medium">
+                        Star on GitHub
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-16">
+    <footer class="py-16 relative z-10">
         <div class="content-width">
             <div class="flex flex-col md:flex-row justify-between items-center mb-8">
                 <div class="flex items-center space-x-3 mb-4 md:mb-0">
-                    <div class="w-8 h-8 bg-brain-blue rounded-lg flex items-center justify-center">
+                    <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
                         <span class="text-white font-bold text-sm">B4J</span>
                     </div>
                     <span class="text-xl font-semibold text-white">Brain4J</span>
                 </div>
                 <div class="flex space-x-8">
-                    <a href="https://github.com/brain4j-org/brain4j/wiki/Getting-Started" target="_blank" class="text-slate-400 hover:text-brain-blue transition-colors">Documentation</a>
-                    <a href="https://github.com/brain4j-org/brain4j" target="_blank" class="text-slate-400 hover:text-brain-blue transition-colors">GitHub</a>
-                    <a href="https://t.me/echogpt1" target="_blank" class="text-slate-400 hover:text-brain-blue transition-colors">Blog</a>
+                    <a href="https://github.com/brain4j-org/brain4j/wiki/Getting-Started" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors">Documentation</a>
+                    <a href="https://github.com/brain4j-org/brain4j" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors">GitHub</a>
+                    <a href="https://t.me/echogpt1" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors">Blog</a>
                 </div>
             </div>
             <div class="border-t border-slate-700 pt-8 text-center">
                 <p class="text-slate-500">© 2025 Brain4J. Open source machine learning framework for Java.</p>
-                <p class="text-slate-500 mt-2">Site made with love by <a href="https://skrahs.github.io" target="_blank" class="text-brain-blue hover:text-blue-400 transition-colors">skrahs</a></p>
+                <p class="text-slate-500 mt-2">Site made with love by <a href="https://skrahs.github.io" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">skrahs</a></p>
             </div>
         </div>
     </footer>
 
     <script src="src/main.js"></script>
+    <script src="src/particles.js"></script>
 </body>
 </html>
